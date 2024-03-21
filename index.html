@@ -1,53 +1,71 @@
-><!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
 
+  <!DOCTYPE html>
+  <html lang="en">
+    <link rel="stylesheet" href="style.css">
 
-<div class="calculadora">
-    <div class="paleta">
-      <span class="a" onclick="cambioColor('#009688')"></span>
-      <span class="b" onclick="cambioColor('#2196F3')"></span>
-      <span class="c" onclick="cambioColor('#E91E63')"></span>
-      <span class="d" onclick="cambioColor('#4CAF50')"></span>
-    </div>
-    <div onclick="operar('=')" class="igual">
-      =
-    </div>
-    <div class="pantalla">
-      <div class="ripple">
+  <head>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="Style.css">
+      <title>Calculadora</title>
+  </head>
+  
+  <body>
+      <div id="container">
+          <header>
+              <h2>Para mais projetos como esse <a href="https://github.com/PTomilhero27" target="_blank" rel="noopener noreferrer"> GitHub </a>. | <a href="https://codepen.io/ptomilhero27/pen/ZELEWxz" target="_blank" rel="noopener noreferrer">CodePen</a></h2>
+  
+          </header>
+          <div class="calculadora">
+              <h1>Calculadora</h1>
+              <p id="resultado"></p>
+              <table>
+                  <tr>
+                      <td><button class="botao btn2" onclick="apagar()">C</button></td>
+                      <td><button class="botao btn2" onclick="deletar()"><-</button></td>
+                      <td><button class="botao btn2" onclick="inserir('/')">/</button></td>
+                      <td><button class="botao btn1" onclick="inserir('*')">X</button></td>
+  
+                  </tr>
+                  <tr>
+                      <td><button class="botao" onclick="inserir('7')">7</button></td>
+                      <td><button class="botao" onclick="inserir('8')">8</button></td>
+                      <td><button class="botao" onclick="inserir('9')">9</button></td>
+                      <td><button class="botao btn1" onclick="inserir('-')">-</button></td>
+  
+                  </tr>
+                  <tr>
+                      <td><button class="botao" onclick="inserir('4')">4</button></td>
+                      <td><button class="botao" onclick="inserir('5')">5</button></td>
+                      <td><button class="botao" onclick="inserir('6')">6</button></td>
+                      <td><button class="botao btn1" onclick="inserir('+')">+</button></td>
+  
+                  </tr>
+                  <tr>
+                      <td><button class="botao" onclick="inserir('1')">1</button></td>
+                      <td><button class="botao" onclick="inserir('2')">2</button></td>
+                      <td><button class="botao" onclick="inserir('3')">3</button></td>
+                      <td rowspan="2"><button class="botao btn1" style="height: 106px; border-radius: 30px;  " onclick="calcular()">=</button></td>
+  
+                  </tr>
+                  <tr>
+                      <td colspan="2">
+                          <button class="botao btn" onclick="inserir('0')">0</button></td>
+                      <td><button class="botao " onclick="inserir('.')">.</button></td>
+  
+                  </tr>
+              </table>
+  
+          </div>
+          <footer>
+              <h1>Pedro Teixera Tomilhero&copy;</h1>
+              <h2>Peojeto desenvolvido na IMERSÃO DEV <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="logo alura"></h2>
+          </footer>
       </div>
-      <div class="cntGeneral">
-        <div class="cnt">
-        <div class="title">Calculadora</div>
-        <div class="icon">
-          <i class="material-icons" onclick="paleta()">palette</i>
-          <i class="material-icons npr">tag_faces</i>
-        </div>
-      </div>
-      <div class="modulo"> </div>
-      </div>
-    </div>
-    <div class="teclado">
-      <div><span onclick="operar(7)">7</span></div>
-      <div><span onclick="operar(8)">8</span></div>
-      <div><span onclick="operar(9)">9</span></div>
-      <div><span onclick="operar('/')">÷</span></div>
-      <div><span onclick="operar(4)">4</span></div>
-      <div><span onclick="operar(5)">5</span></div>
-      <div><span onclick="operar(6)">6</span></div>
-      <div><span onclick="operar('*')">x</span></div>
-      <div><span onclick="operar(1)">1</span></div>
-      <div><span onclick="operar(2)">2</span></div>
-      <div><span onclick="operar(3)">3</span></div>
-      <div><span onclick="operar('-')">-</span></div>
-      <div><span onclick="operar('c')"><i class="material-icons">backspace</i></span></div>
-      <div><span onclick="operar('0')">0</div>
-      <div><span onclick="operar('.')">.</span></div>
-      <div><span onclick="operar('+')">+</span></div>
-    </div>
-  </div>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </body>
+  <script src="main.js "></script>
+  
+  </html>

@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+html,
+body,
+input,
+button,
+a {
+    font-family: 'Archivo', sans-serif;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(255, 255, 255), #d9d9d9);
+    color: #d4c2ff;
+    text-align: center;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    background: black;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.calculadora {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 248, 248, 0.8);
+    box-shadow: 0px 0 8px rgba(38, 221, 188, 0.8);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+}
+
+.botao {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    background: #333333;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    margin: .2rem;
+    transition: 0.2s;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+html,
+body,
+input,
+button,
+a {
+    font-family: 'Archivo', sans-serif;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, black, #d9d9d9);
+    color: #d4c2ff;
+    text-align: center;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    background: black;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.calculadora {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0 8px rgba(38, 221, 188, 0.8);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+}
+
+.botao {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    background: #333333;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    margin: .2rem;
+    transition: 0.2s;
+}
+
+.botao:hover {
+    background: black;
+}
+
+.btn {
+    width: 106px;
+    border-radius: 30px;
+}
+
+.btn1 {
+    background: #FE9E09;
+}
+
+.btn2 {
+    background: #A5A5A5;
+    color: black;
+}
+
+.btn2:hover {
+    background: black;
+    color: white;
+}
+
+.btn1:hover {
+    background: black;
+}
+body {
+    background-color: #d9d9d9;
+}
+
+#resultado {
+    background: white;
+    width: 100%;
+    height: 3rem;
+    margin: 5px 0;
+    color: black;
+    text-align: right;
+    border-radius: 0.4rem;
+    font-size: 2.6rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 0 5rem;
+    background: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h1 {
+    font-family: 'Dancing Script';
+    font-size: 3rem;
+}
+
+footer h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+footer img {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
+}
+
+@media (max-width: 750px) {
+    footer {
+        display: block;
+    }
+    footer h1 {
+        font-size: 2.2rem;
+        margin-top: 0.5rem;
+    }
+    footer h2 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+}
+.botao:hover {
+    background: black;
+}
+
+.btn {
+    width: 106px;
+    border-radius: 30px;
+}
+
+.btn1 {
+    background: #FE9E09;
+}
+
+.btn2 {
+    background: #A5A5A5;
+    color: black;
+}
+
+.btn2:hover {
+    background: black;
+    color: white;
+}
+
+.btn1:hover {
+    background: black;
+}
+
+#resultado {
+    background: white;
+    width: 100%;
+    height: 3rem;
+    margin: 5px 0;
+    color: black;
+    text-align: right;
+    border-radius: 0.4rem;
+    font-size: 2.6rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 0 5rem;
+    background: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h1 {
+    font-family: 'Dancing Script';
+    font-size: 3rem;
+}
+
+footer h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+footer img {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1rem;
+}
+
+@media (max-width: 750px) {
+    footer {
+        display: block;
+    }
+    footer h1 {
+        font-size: 2.2rem;
+        margin-top: 0.5rem;
+    }
+    footer h2 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+}
